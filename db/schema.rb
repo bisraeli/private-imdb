@@ -17,7 +17,7 @@ ActiveRecord::Schema.define(:version => 20130710193628) do
     t.string "title"
     t.string "year"
     t.text   "plot"
-    t.string "npaa_rating"
+    t.string "mpaa_rating"
     t.string "rating"
   end
 

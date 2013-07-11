@@ -6,7 +6,7 @@ class MoviesController < ApplicationController
   end
 
   def search
-    @search_result= Imdb::Search.new(params[:title])
+    @search_result= Imdb::Search.new(params[:title].to_s)
   end
 
 end
