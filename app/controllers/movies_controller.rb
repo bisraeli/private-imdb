@@ -16,11 +16,20 @@ class MoviesController < ApplicationController
   def create
 
     movie = movie_search(params[:id])
-    @movie = Movie.create!(
+    movie = Movie.new(
       :title => movie.title,
       :year => movie.year,
       :mpaa_rating => movie.mpaa_rating,
       :plot => movie.plot)
+    if params[:x] == "Favorite"
+      movie.rating = 100
+    end
+      movie.save
+      redirect_to '/movies'
+  end
+
+  def favorite
+    @movie
   end
 
   def new

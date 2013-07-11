@@ -9,8 +9,15 @@
 <form action="/movies" method="POST">
 <button> Favorite This Movie </button>
 <input type="hidden" name="id" value="<%=@movie.id %>" >
+<input type="hidden" name="x" value="Favorite">
 </form>
 
+<form action='/movies' method="POST">
+<button> Save </button>
+<input type="hidden" name="id" value="<%=@movie.id %>"
 
+<input type="hidden" name="x" value="Save">
+
+</form>
 <%= render :partial => "rating" %>
 

@@ -2,7 +2,7 @@
 <ul>
 <% @movies.each do |movie| %>
 <li>
-<%= movie.title %>
+<%= link_to movie.title, show_search_result_path(:movie_id => movie.title) %>
 </li>
 <% end %>
 </ul>
