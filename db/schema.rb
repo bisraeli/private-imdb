@@ -14,11 +14,11 @@
 ActiveRecord::Schema.define(:version => 20130710193628) do
 
   create_table "movies", :force => true do |t|
-    t.string "title"
-    t.string "year"
-    t.text   "plot"
-    t.string "mpaa_rating"
-    t.string "rating"
+    t.string  "title"
+    t.string  "year"
+    t.text    "plot"
+    t.string  "mpaa_rating"
+    t.integer "rating",      :default => 50
   end
 
 end

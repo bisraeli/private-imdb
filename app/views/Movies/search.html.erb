@@ -1,4 +1,8 @@
 <h1> Here are your search results </h1>
+<ul>
 <% @search_result.movies.each do |movie| %>
-<%= movie.title %>
+<li>
+<%= link_to movie.title, show_search_result_path(:id => movie.id) %>
+</li>
 <% end %>
+</ul>

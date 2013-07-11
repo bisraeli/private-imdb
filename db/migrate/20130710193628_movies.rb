@@ -5,7 +5,7 @@ class Movies < ActiveRecord::Migration
       t.string :year
       t.text :plot
       t.string :mpaa_rating
-      t.string :rating
+      t.integer :rating, default: 50
     end
   end
 
