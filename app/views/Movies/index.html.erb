@@ -1,7 +1,10 @@
 <h1> These are your movies </h1><br/>
+<ul>
 <% @movies.each do |movie| %>
+<li>
 <%= movie.title %>
+</li>
 <% end %>
-
+</ul>
 
 <%= render :partial => "searchbox" %>

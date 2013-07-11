@@ -14,11 +14,13 @@ class MoviesController < ApplicationController
   end
 
   def create
+
     movie = movie_search(params[:id])
     @movie = Movie.create!(
-      :title => movie.title, :year => movie.year,
+      :title => movie.title,
+      :year => movie.year,
       :mpaa_rating => movie.mpaa_rating,
-      :rating => movie.rating, :plot => movie.plot)
+      :plot => movie.plot)
   end
 
   def new

@@ -1,8 +1,2 @@
-<%= @movie.title %></br>
-<%= @movie.year %></br>
-<%= @movie.mpaa_rating %> </br>
+<%= render :partial => "rating" %>
 
-<form action="/movies/favorite" method="PUT">
-<button name ="plus"> + </button>
-<button name="minus"> - </button>
-</form>
