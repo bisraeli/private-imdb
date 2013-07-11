@@ -28,8 +28,16 @@ class MoviesController < ApplicationController
       redirect_to '/movies'
   end
 
-  def favorite
-    @movie
+  def rate
+    id = params[:id]
+    @movie = Movie.find(id)
+    if params[:rate] == "plus"
+      @movie.rating += 1
+    else
+      @movie.rating -= 1
+    end
+      movie.save
+      redirect '/movies'
   end
 
   def new
@@ -39,6 +47,9 @@ class MoviesController < ApplicationController
   end
 
   def show
+    id = params[:id]
+    @movie = Movie.find(id)
+
   end
 
   def update

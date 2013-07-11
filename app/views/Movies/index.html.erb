@@ -2,9 +2,13 @@
 <ul>
 <% @movies.each do |movie| %>
 <li>
-<%= link_to movie.title, show_search_result_path(:movie_id => movie.title) %>
+<a href="/movies/<%= movie.id %>"><%= movie.title %></a>
+
+
 </li>
 <% end %>
 </ul>
 
 <%= render :partial => "searchbox" %>
+
+<!--<#%= link_to movie.title, movie_path(:id => movie.id) %>>

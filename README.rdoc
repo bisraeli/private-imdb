@@ -1,3 +1,42 @@
+What is the meaning of this rails app?
+
+At this point, I've taken some big steps toward completing this assignment, both its LAB and hw components.
+
+LAB:
+
+I  have an index which displays movies I've stored in my database. check.
+
+My index also provides a search field that queries that imdb API for titles based on what the user enters into the search box.
+
+It displays the title, year, mpaa rating, rating, and movie poster from the api, and stores them in the data base only after the user clicks on the favorite or save button.
+
+The index provides links to each page.
+
+I also sucessfully applied a partial for rating movies and for the search field. Gave myself a little pat on the back for this.
+
+I'm still unclear on quite a bit of the syntax, and this persistent difficulty is really what seems to be throwing me off thinking about what I'm supposed to be doing conceptually and vice-versa.
+
+I can think of 12 errors off-hand that each took about 20 minutes "debug" that were really frustrating --- and because there were so many I don't feel immune from repeating these errors.
+
+
+I still need to create a migration files for actors, and then a join table, and then go through the process of ... linking actors to films ---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 == Welcome to Rails
 
 Rails is a web-application framework that includes everything needed to create
@@ -259,3 +298,5 @@ vendor
   External libraries that the application depends on. Also includes the plugins
   subdirectory. If the app has frozen rails, those gems also go here, under
   vendor/rails/. This directory is in the load path.
+
+

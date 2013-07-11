@@ -3,8 +3,14 @@
 <%= @movie.mpaa_rating %> </br>
 <%= @movie.rating %> </br>
 
-<form action="/movies/favorite" method="PUT">
-<button name ="plus"> + </button>
-<button name="minus"> - </button>
+<form action="/movies/favorite/<%= @movie.id%>" method="POST">
+<button name ="rate" value="plus"> + </button>
+
+</form>
+
+
+<form action="/movies/favorite/<%= @movie.id %>" method="POST">
+<button name="rate" value="minus"> - </button>
+
 </form>
 
